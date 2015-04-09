@@ -1,0 +1,17 @@
+#results, #fail {
+    display: none;
+    border-top: solid 1px #8f8b05;
+}
+
+.bright {
+    color: #ff00a9;
+}
+
+.btn {
+    background-color: #7e6283;
+    color: #8f8b05;
+}
+
+.end {
+    margin-top: 10px;
+}

@@ -24,3 +24,23 @@ function scrabbleScore(word) {
 
     return score;
 };
+
+$(document).ready(function(){
+        $("#scrabbleWord").submit(function(event){
+            var word = $("input#word").val();
+
+            var score = scrabbleScore(word);
+
+            if (score > -1) {
+                $("#fail").hide();
+                $(".word").text(word).addClass("bright");
+                $("#score").text(score).addClass("bright");
+                $("#results").show();
+            } else {
+                $("#results").hide();
+                $("#fail").show();
+            }
+
+            event.preventDefault();
+        });
+});
